@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:orientation="horizontal">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/loginButton"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                android:gravity="center"
+                android:text="Register"
+                android:textSize="20dp"
+                android:layout_alignParentLeft="true" />
+
+
+
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/register"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                android:hint="enter username"
+                android:padding="4dp"
+                android:maxLines="1"
+                android:layout_alignParentLeft="true" />
+
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/username"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                android:hint="enter password"
+                android:inputType="textPassword"
+                android:padding="4dp"
+                android:maxLines="1"
+                android:layout_alignParentLeft="true" />
+
+            <Button
+                android:id="@+id/registerButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/password"
+                android:padding="4dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                android:text="Register"
+                android:textAllCaps="false"
+                android:textSize="25sp"
+                android:textColor="@android:color/background_light"
+                />
+
+            <TextView
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/registerButton"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="265dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="Click here to login"
+                android:textSize="15dp" />
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
